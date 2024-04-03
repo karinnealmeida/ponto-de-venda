@@ -11,3 +11,15 @@ create table if not exists categorias (
     id serial primary key,
     descricao text
 );
+
+insert into categorias (descricao)
+values 
+('informatica'),
+('celulares'),
+('beleza e perfumaria'),
+('mercado'),
+('livros e papelaria'),
+('brinquedos'),
+('moda'),
+('bebe'),
+('games');
