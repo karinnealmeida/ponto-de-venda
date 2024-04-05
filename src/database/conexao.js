@@ -11,4 +11,4 @@ const knex = require('knex')({
     },
   });
 
-  module_exports = knex;
+  module.exports = knex;
