@@ -3,6 +3,6 @@ const { listarCategoria } = require('./controladores/categorias');
 
 const rotas = Router();
 
-rotas.get("/categoria", listarCategoria); //teste de servidor - remover ao finalgit r
+rotas.get("/categoria", listarCategoria);
 
 module.exports = rotas;
