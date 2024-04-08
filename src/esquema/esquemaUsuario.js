@@ -19,4 +19,4 @@ const esquemaUsuario = joi.object({
     })
 });
 
-module.exports = esquemaUsuario;
+module.exports = esquemaUsuario
