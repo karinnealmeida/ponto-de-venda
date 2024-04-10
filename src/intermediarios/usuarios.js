@@ -14,6 +14,6 @@ const validarEmailUnico = async (req, res, next) => {
     } catch (error) {
         return res.status(500).json({ mensagem: error.message });
     }
-    }
+}
 
 module.exports = {validarEmailUnico}
