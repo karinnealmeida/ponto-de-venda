@@ -1,4 +1,4 @@
-const knex = require('../database/conexao');
+const knex = require('../../database/conexao');
 
 const listarCategoria = async (req, res) => {
     try {
@@ -10,4 +10,4 @@ const listarCategoria = async (req, res) => {
     }
 }
 
-module.exports = {listarCategoria}
+module.exports = listarCategoria
