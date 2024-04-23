@@ -1,4 +1,4 @@
-const knex = require("../database/conexao");
+const knex = require("../../database/conexao");
 const bcrypt = require('bcrypt');
 
 const validarEmailUnico = async (req, res, next) => {
@@ -7,7 +7,9 @@ const validarEmailUnico = async (req, res, next) => {
 
             if (await knex('usuarios').where({ email }).first()) {
 
-                return res.status(400).json({ mensagem: "Email já cadastrado."});
+                return res.status(400).json({ 
+                    mensagem: "Email já cadastrado."
+                });
             }
 
             next();
@@ -24,13 +26,15 @@ const validarLogin = async (req, res, next) => {
         const usuario = await knex('usuarios').where({email}).first().returning();
         
         if (!usuario) {
-            return res.status(404).json({mensagem: 'E-mail ou senha incorretos.'});
+            return res.status(404).json({
+                mensagem: "E-mail ou senha incorretos."
+            });
         }
 
         const senhaValida = await bcrypt.compare(senha, usuario.senha);
 
         if (!senhaValida) {
-            return res.status(404).json({mensagem: 'E-mail ou senha incorretos.'});
+            return res.status(404).json({mensagem: "E-mail ou senha incorretos."});
         }
 
         next();
