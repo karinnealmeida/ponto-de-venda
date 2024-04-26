@@ -1,10 +1,12 @@
 {
   "name": "pdv",
   "version": "1.0.0",
-  "description": "![](https://i.imgur.com/xG74tOh.png)",
+  "description": "Projeto apresentado como desafio final no curso de desenvolvimento de software backend da cubos academy",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "prepare": "husky",
+    "test": "echo test"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "husky": "^9.0.11",
     "joi": "^17.12.3",
     "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
