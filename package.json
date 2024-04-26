@@ -1,12 +1,12 @@
 {
   "name": "pdv",
   "version": "1.0.0",
-  "description": "Projeto apresentado como desafio final no curso de desenvolvimento de software backend da cubos academy",
+  "description": "Projeto apresentado como desafio final no curso de desenvolvimento de software da cubos academy",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/index.js",
     "prepare": "husky",
-    "test": "echo test"
+    "test": "echo 'test'"
   },
   "keywords": [],
   "author": "",
