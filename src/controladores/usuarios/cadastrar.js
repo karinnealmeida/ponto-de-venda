@@ -1,4 +1,4 @@
-const knex = require('../database/conexao');
+const knex = require('../../database/conexao');
 const bcrypt = require('bcrypt');
 require('dotenv').config;
 

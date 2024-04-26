@@ -8,10 +8,12 @@ const validarCorpoReq = joiEsquema => async (req, res, next) => {
         
     } catch (error) {
 
-        return res.status(400).json({
-            mensagem: error.message
+        return res
+            .status(400)
+                .json({
+                     mensagem: error.message
         })    
     }
 }
 
-module.exports = validarCorpoReq
+module.exports = validarCorpoReq;
